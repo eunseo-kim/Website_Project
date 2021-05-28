@@ -19,7 +19,7 @@
 
     echo 
         "<script>
-	          location.href = '../main.html';
+	          location.href = '../main_screen.php';
 	    </script>";
 ?>
 

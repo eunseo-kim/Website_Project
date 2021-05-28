@@ -10,7 +10,7 @@
 <nav class="navbar">
       <div class="navbar__logo">
         <i class="fab fa-ethereum"></i>
-        <a href="main.php">Couple Diary</a>
+        <a href="main_screen.php">Couple Diary</a>
       </div>
       <ul class="navbar__menu">
         <li><a href="main_screen.php">Home</a></li>

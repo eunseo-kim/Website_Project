@@ -67,7 +67,7 @@
       <!-- main_content -->
     </section>
     <footer>
-      <?php include "footer_screen.php";?>
+      <!-- <?php include "footer_screen.php";?> -->
     </footer>
     <!-- 로그인 end -->
   </body>
