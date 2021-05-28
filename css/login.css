@@ -45,7 +45,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border-radius: 5px;
+  border-radius: 6px;
 }
 
 #login_form li {
@@ -89,19 +89,25 @@ input {
 }
 
 #login_btn:hover {
+  box-shadow: 0 2px 5px 1px rgb(64 60 67 / 20%);
   background-color: rgb(255, 75, 99);
 }
 
 .create-account {
   margin: 0 auto;
-  background-color: rgb(245, 245, 245);
+  border: 2px solid rgb(245, 245, 245);
+  background-color: #fff;
   font-size: 17px;
   width: 300px;
   height: 60px;
   line-height: 50px;
   text-align: center;
-  border-radius: 5px;
+  border-radius: 6px;
   margin-top: 20px;
+}
+
+.create-account:hover {
+  box-shadow: 0 1px 16px 1px rgb(64 60 67 / 10%);
 }
 
 .create-account__text {

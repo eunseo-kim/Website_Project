@@ -22,9 +22,9 @@
 #join_box h2 {
   font-family: "Pattaya", sans-serif;
   font-weight: bolder;
-  font-size: 30px;
+  font-size: 40px;
   border-bottom: solid 1px #dee1e4;
-  padding-top: 50px;
+  padding-top: 80px;
   padding-bottom: 10px;
 }
 #join_box .col1 {
@@ -71,4 +71,10 @@
   border-radius: 4px;
   font-size: smaller;
   margin-left: 5px;
+}
+
+#join_box span:hover {
+  cursor: pointer;
+  background-color: var(--background-color);
+  color: var(--text-color);
 }
