@@ -1,13 +1,13 @@
 :root {
   --text-color: #f0f4f5;
   --background-color: #263343;
-  --accent-color: rgb(255, 159, 172);
+  --accent-color: rgb(250, 111, 130);
 }
 
 /* 메인 콘텐트 */
 #main_content {
   font-family: "Gothic A1", sans-serif;
-  font-weight: lighter;
+  font-weight: bolder;
   position: relative;
   width: 1000px;
   height: 400px;
@@ -21,7 +21,7 @@
 }
 #join_box h2 {
   font-family: "Pattaya", sans-serif;
-  font-weight: lighter;
+  font-weight: bolder;
   font-size: 30px;
   border-bottom: solid 1px #dee1e4;
   padding-top: 50px;
