@@ -8,7 +8,7 @@ check_ID.addEventListener("click", () => check_id());
 
 function check_id() {
   // 왜 php 폴더 안으로 안들어가지? (결국 member_check_if.php를 빼서 사용함)
-  window.open("member_check_id.php?id=" + document.member_form.id.value, "IDcheck", "left=700,top=300,width=350,height=200,scrollbars=no,resizable=no");
+  window.open("./php/member_check_id.php?id=" + document.member_form.id.value, "IDcheck", "left=700,top=300,width=350,height=200,scrollbars=no,resizable=no");
   //   window.open("/php/member_check_id.php?id=" + document.member_form.id.value, "IDcheck", "left=700,top=300,width=350,height=200,scrollbars=no,resizable=no");
 }
 
