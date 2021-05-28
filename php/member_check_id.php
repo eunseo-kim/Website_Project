@@ -39,9 +39,10 @@
                 }
                 else
                 {
-                    $con = mysqli_connect("localhost", "eunseo", "1205", "couple diary");               
+                    $con = mysqli_connect("localhost", "eunseo", "1205", "diary");               
                     $sql = "select * from members where id='$id'";
                     $result = mysqli_query($con, $sql);
+                    $id_usable = false;
                     $num_record = mysqli_num_rows($result);
                     if ($num_record)
                     {
@@ -51,6 +52,7 @@
                     else
                     {
                         echo "<li>".$id." 아이디는 사용 가능합니다.</li>";
+                        $id_usable = true;
                     }                  
                     mysqli_close($con);
                 }

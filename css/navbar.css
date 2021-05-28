@@ -63,6 +63,7 @@ a {
 }
 
 .navbar__toggleBtn {
+  color: var(--text-color);
   display: none;
   position: absolute;
   right: 32px;

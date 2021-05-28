@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Couple Diary</title>
+    <title>Daily</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet" />
@@ -34,7 +34,7 @@
         <div id="login_box">
           <div id="login_title">
             <div class="login_title__icon"><i class="fab fa-ethereum"></i></div>
-            <div class="login_title__text">Sign in to Couple Diary</div>
+            <div class="login_title__text">Sign in to Daily</div>
           </div>
           <!-- 여기 둥근 박스 처리하기-->
           <div id="login_form">
@@ -58,7 +58,7 @@
           </div>
           <!-- login_form end -->
           <div class="create-account">
-            <span>New to Couple Diary?</span>
+            <span>New to Daily?</span>
             <a href="sign_up_screen.php" class="create-account__text">Create an account</a>
           </div>
         </div>

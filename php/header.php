@@ -10,7 +10,7 @@
 <nav class="navbar">
       <div class="navbar__logo">
         <i class="fab fa-ethereum"></i>
-        <a href="main_screen.php">Couple Diary</a>
+        <a href="main_screen.php">Daily</a>
       </div>
       <ul class="navbar__menu">
         <li><a href="main_screen.php">Home</a></li>
@@ -59,7 +59,7 @@
       <?php
       }
       ?>
-      <a href="" class="navbar__toggleBtn">
+      <div class="navbar__toggleBtn">
         <i class="fas fa-bars"></i>
-      </a>
+    </div>
     </nav>
