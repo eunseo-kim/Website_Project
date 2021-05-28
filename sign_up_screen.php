@@ -22,36 +22,10 @@
     <script src="./js/sign_up.js" defer></script>
   </head>
   <body>
-    <!-- 메뉴바 -->
-    <nav class="navbar">
-      <div class="navbar__logo">
-        <i class="fab fa-ethereum"></i>
-        <a href="">Couple Diary</a>
-      </div>
-      <ul class="navbar__menu">
-        <li><a href="main.html">Home</a></li>
-        <li><a href="#">Gallary</a></li>
-        <li><a href="#">Schedule</a></li>
-        <li><a href="#">Diary</a></li>
-        <li><a href="#">Message</a></li>
-      </ul>
-      <ul class="navbar__user">
-        <li>
-          <a href="#">
-            <i class="fas fa-comment-alt"></i>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <i class="fas fa-user"></i>
-          </a>
-        </li>
-      </ul>
-      <a href="#" class="navbar__toggleBtn">
-        <i class="fas fa-bars"></i>
-      </a>
-    </nav>
-    <!-- 메뉴바 end -->
+    <!-- header.php 실행 -->
+    <header>
+      <?php include "./php/header.php";?>
+    </header>
 
     <!--  회원가입 -->
     <section>

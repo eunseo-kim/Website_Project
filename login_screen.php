@@ -21,37 +21,12 @@
     <script src="./js/main.js" defer></script>
     <script src="./js/login.js" defer></script>
   </head>
+
   <body>
-    <!-- 메뉴바 -->
-    <nav class="navbar">
-      <div class="navbar__logo">
-        <i class="fab fa-ethereum"></i>
-        <a href="">Couple Diary</a>
-      </div>
-      <ul class="navbar__menu">
-        <li><a href="main.html">Home</a></li>
-        <li><a href="#">Gallary</a></li>
-        <li><a href="#">Schedule</a></li>
-        <li><a href="#">Diary</a></li>
-        <li><a href="#">Message</a></li>
-      </ul>
-      <ul class="navbar__user">
-        <li>
-          <a href="#">
-            <i class="fas fa-comment-alt"></i>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <i class="fas fa-user"></i>
-          </a>
-        </li>
-      </ul>
-      <a href="#" class="navbar__toggleBtn">
-        <i class="fas fa-bars"></i>
-      </a>
-    </nav>
-    <!-- 메뉴바 end -->
+    <!-- header.php 실행 -->
+    <header>
+      <?php include "./php/header.php";?>
+    </header>
 
     <!--  로그인 -->
     <section>
@@ -84,7 +59,7 @@
           <!-- login_form end -->
           <div class="create-account">
             <span>New to Couple Diary?</span>
-            <a href="sign_up.html" class="create-account__text">Create an account</a>
+            <a href="sign_up_screen.php" class="create-account__text">Create an account</a>
           </div>
         </div>
         <!-- login_box -->
@@ -92,7 +67,7 @@
       <!-- main_content -->
     </section>
     <footer>
-      <?php include "footer.php";?>
+      <?php include "footer_screen.php";?>
     </footer>
     <!-- 로그인 end -->
   </body>

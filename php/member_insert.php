@@ -11,8 +11,8 @@
     // mysqli_connect(host, username, password, dbname)
     $con = mysqli_connect("localhost", "eunseo", "1205", "couple diary");
 
-	$sql = "insert into members(id, pass, name, email, regist_day, level, point)";
-	$sql .= "values('$id', '$pass', '$name', '$email', '$regist_day', 9, 0)";
+	$sql = "insert into members(id, pass, name, email, regist_day)";
+	$sql .= "values('$id', '$pass', '$name', '$email', '$regist_day')";
 
 	mysqli_query($con, $sql);  // $sql 에 저장된 명령 실행
     mysqli_close($con);     
