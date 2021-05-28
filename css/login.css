@@ -24,15 +24,15 @@
   font-size: 30px;
   text-align: center;
   border-bottom: solid 1px #dee1e4;
-  padding-top: 50px;
+  padding-top: 35px;
   padding-bottom: 10px;
   margin-bottom: 20px;
 }
 
 .login_title__icon {
-  font-size: 60px;
+  font-size: 50px;
   color: var(--accent-color);
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 }
 
 #login_form {

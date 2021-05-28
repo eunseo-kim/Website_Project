@@ -17,7 +17,7 @@
         <li><a href="#">Gallary</a></li>
         <li><a href="#">Schedule</a></li>
         <li><a href="#">Diary</a></li>
-        <li><a href="#">Message</a></li>
+        <li><a href="./message_screen.php">Message</a></li>
       </ul>
       <!-- 만약 사용자라면, 마이페이지 & 로그아웃-->
       <?php
