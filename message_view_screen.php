@@ -77,8 +77,8 @@
           </li>		
         </ul>
         <ul class="buttons">
-          <li><button class="deleteBtn" onclick="location.href='message_delete.php?num=<?=$num?>&mode=<?=$mode?>'">삭제하기</button></li>
-          <li><button onclick="location.href='message_response_form.php?num=<?=$num?>'">답장하기</button></li>
+          <li><button class="deleteBtn" onclick="location.href='./php/message_delete.php?num=<?=$num?>&mode=<?=$mode?>'">삭제하기</button></li>
+          <li><button onclick="location.href='message_response_form_screen.php?num=<?=$num?>'">답장하기</button></li>
           <li><button onclick="location.href='message_box_screen.php?mode=rv'">받은 쪽지함</button></li>
           <li><button onclick="location.href='message_box_screen.php?mode=send'">보낸 쪽지함</button></li>
         </ul>
