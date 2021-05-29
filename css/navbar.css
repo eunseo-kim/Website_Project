@@ -100,6 +100,7 @@ a {
   /* 작은 화면에서만 toggle 버튼 나오도록 */
   .navbar__toggleBtn {
     display: block;
+    cursor: pointer;
   }
 
   .navbar__menu.active,

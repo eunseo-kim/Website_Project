@@ -1,0 +1,101 @@
+/* 쪽지 확인하기(view_msg.php) */
+:root {
+  --text-color: #f0f4f5;
+  --background-color: #263343;
+  --accent-color: rgb(250, 111, 130);
+}
+
+#message_box {
+  font-family: "Roboto Condensed", sans-serif;
+  margin: 0 auto;
+  margin-top: 50px;
+  width: 80%;
+  height: 300px;
+  margin-top: 50px;
+  padding: 10px;
+}
+
+#message_box .title {
+  margin-top: 20px;
+  font-size: 25px;
+  font-weight: bold;
+  padding: 10px 0px;
+  border-bottom: solid 2px #516e7f;
+}
+
+#view_content li {
+  padding: 0;
+  height: 40px;
+  line-height: 40px;
+  align-items: center;
+  vertical-align: middle;
+}
+/* 
+#view_content li:nth-child(1) {
+  border-bottom: solid 1px #aaaaaa;
+} */
+
+#view_content {
+  background-color: var(--text-color);
+  color: black;
+}
+
+#view_content .col1 {
+  float: left;
+  margin-left: 10px;
+}
+#view_content .col2 {
+  float: right;
+  margin-right: 10px;
+  text-align: right;
+}
+#view_content li:nth-child(2) {
+  height: 200px;
+  padding: 15px 15px 15px 15px;
+  border-bottom: solid 1px #cccccc;
+  background-color: rgb(255, 255, 255);
+}
+
+.buttons li {
+  margin: 10px 3px;
+  float: right;
+}
+
+.buttons li button {
+  font-weight: bold;
+  font-size: 15px;
+  width: 100px;
+  height: 30px;
+  border: none;
+  border-radius: 4px;
+  background-color: var(--text-color);
+}
+
+.buttons li button:hover {
+  background-color: var(--accent-color);
+  color: white;
+}
+
+@media screen and (max-width: 767px) {
+  #message_box {
+    width: 90%;
+  }
+
+  #message_box .buttons li {
+    display: flex;
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  #message_box .buttons .deleteBtn {
+    margin-top: 5px;
+  }
+
+  #message_box .buttons li button:nth-child(4) {
+    margin-bottom: 5px;
+  }
+  #message_box .buttons button {
+    width: 100%;
+    height: 40px;
+  }
+}

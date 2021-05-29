@@ -116,7 +116,7 @@
             ?>
             <li>
               <span class="col1"><?=$number?></span>
-              <span class="col2"><a href="message_view.php?mode=<?=$mode?>&num=<?=$num?>"><?=$subject?></a></span>
+              <span class="col2"><a href="message_view_screen.php?mode=<?=$mode?>&num=<?=$num?>"><?=$subject?></a></span>
               <span class="col3"><?=$msg_name?>(<?=$msg_id?>)</span>
               <span class="col4"><?=$regist_day?></span>
             </li>	
