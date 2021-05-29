@@ -7,7 +7,7 @@
 #message_box {
   font-family: "Roboto Condensed", sans-serif;
   font-weight: lighter;
-  width: 40%;
+  width: 50%;
   height: 300px;
   margin: 0 auto;
   margin-top: 40px;
@@ -104,6 +104,15 @@
   margin-right: 10px;
 }
 
+#write_msg li:nth-child(4) .col1 {
+  height: 150px;
+  border-right: none;
+}
+.col1 .col1_textarea {
+  width: 100%;
+  border-right: 1px solid #d6d6d6;
+}
+
 #write_msg .col2 {
   text-align: left;
   position: relative;
@@ -131,17 +140,17 @@
 }
 
 textarea {
+  overflow-y: scroll;
   font-family: "Roboto Condensed", sans-serif;
   position: relative;
   width: 95%;
-  height: 380%;
+  height: 120px;
   font-size: 11px;
   border-radius: 4px;
   border: none;
 }
 
 textarea:hover {
-  height: 330%;
   border: 2px solid #a9c3e2;
 }
 
@@ -163,10 +172,15 @@ button:hover {
   box-shadow: 0 1px 10px 1px rgb(64 60 67 / 15%);
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 790px) {
   #message_box {
     width: 80%;
   }
+
+  /* textarea {
+    height: 75px;
+  } */
+
   /* 
   #write_msg .col {
     display: none;

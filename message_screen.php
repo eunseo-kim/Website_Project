@@ -62,11 +62,11 @@
                   <div id="write_msg">
                       <ul>
                       <li>
-                          <span class="col1">보내는 사람</span>
+                          <span class="col1">보낸 사람</span>
                           <span class="col2"><?=$userid?></span>
                       </li>	
                       <li>
-                          <span class="col1">수신 아이디</span>
+                          <span class="col1">받는 사람</span>
                           <span class="col2"><input name="rv_id" type="text"></span>
                       </li>	
                       <li>
@@ -74,7 +74,7 @@
                           <span class="col2"><input name="subject" type="text"></span>
                       </li>	    	
                       <li id="text_area">	
-                          <span class="col1">내용</span>
+                          <span class="col1"><span class="col1_textarea">내용</span></span>
                           <span class="col2">
                               <textarea name="content" style = "resize: none"></textarea>
                           </span>
