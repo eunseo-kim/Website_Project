@@ -75,27 +75,45 @@ textarea::placeholder {
   width: 100%;
   background: white;
   box-shadow: rgb(0 0 0 / 15%) 0px 0px 8px;
-
   height: 60px;
   line-height: 60px;
+  padding: 0;
 }
-#board_box .buttons li {
-  float: right;
+
+.buttons__box {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
 }
+
 #board_box .buttons button {
   cursor: pointer;
   width: 140px;
   height: 40px;
-  margin: 10px 5px;
+  margin: 10px auto;
   border: none;
-  border-radius: 5px;
+  border-radius: 6px;
   box-shadow: (0 0 0 / 10%) 0px 0px 8px;
-  background-color: var(--background-color);
-  color: white;
   font-weight: 700;
   font-size: 18px;
 }
 
-#board_box .buttons button:hover {
+.board_listBtn {
+  color: #222222;
+  background-color: white;
+}
+
+.board_listBtn:hover {
+  background-color: var(--text-color);
+}
+
+.saveBtn {
   background-color: var(--accent-color);
+  color: white;
+}
+
+.saveBtn:hover {
+  box-shadow: 0 2px 5px 1px rgb(64 60 67 / 20%);
+  background-color: rgb(255, 75, 99);
 }

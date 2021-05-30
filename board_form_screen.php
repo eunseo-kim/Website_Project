@@ -59,9 +59,12 @@
             <textarea name="content" placeholder="당신의 이야기를 적어보세요..."></textarea>
           </ul>
           <ul class="buttons">
-                <li><button type="button" onclick="check_input()">출간하기</button></li>
-                <li><button type="button" onclick="location.href='board_list.php'">목록보기</button></li>
-              </ul>
+            <div class="buttons__box">
+              <li><button type="button" onclick="location.href='board_list.php'" class="board_listBtn">↶ 목록보기</button>
+              </li>
+              <li><button type="button" onclick="check_input()" class="saveBtn">출간하기</button></li>
+            </div>
+          </ul>
 	    </form>
 	</div> <!-- board_box -->
 </section> 
