@@ -60,7 +60,7 @@
           </ul>
           <ul class="buttons">
             <div class="buttons__box">
-              <li><button type="button" onclick="location.href='board_list.php'" class="board_listBtn">↶ 목록보기</button>
+              <li><button type="button" onclick="location.href='board_list_screen.php'" class="board_listBtn">↶ 목록보기</button>
               </li>
               <li><button type="button" onclick="check_input()" class="saveBtn">출간하기</button></li>
             </div>

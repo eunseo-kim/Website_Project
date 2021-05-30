@@ -1,0 +1,138 @@
+/* 갤러리 게시판 보기(velog 디자인) */
+:root {
+  --text-color: #f0f4f5;
+  --background-color: #263343;
+  --accent-color: rgb(250, 111, 130);
+}
+
+#board_box {
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+#board_box h3 {
+  font-family: "Pattaya", sans-serif;
+  font-size: 50px;
+  font-weight: lighter;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #c9c9c9;
+}
+
+#board_list ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  width: 100%;
+  margin: 0 auto;
+  margin: 20px 0;
+}
+
+#board_list li a {
+  font-size: 20px;
+  color: black;
+}
+
+.image_file {
+  border-radius: 5px;
+  box-shadow: 0 2px 5px 4px rgb(64 60 67 / 3%);
+}
+
+.image_file:hover {
+  box-shadow: 0 2px 5px 5px rgb(64 60 67 / 7%);
+}
+
+.image_file img {
+  height: 370px;
+  overflow: hidden;
+  /* height: 100%; */
+  width: 100%;
+  object-fit: contain;
+  border-radius: 5px;
+}
+
+.board_list_block .row1 {
+  font-size: 35px;
+  margin-top: 25px;
+  margin-bottom: 20px;
+  font-weight: bolder;
+}
+
+.board_list_block .row1:hover {
+  text-decoration: underline;
+  color: #1f395a;
+}
+
+.board_list_block .row1_2 {
+  font-size: 18px;
+  color: rgb(138, 138, 138);
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 25px;
+}
+
+.board_list_block .row2 {
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+
+.board_list_block .row3 {
+  color: #909aa9;
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+  padding-bottom: 40px;
+  margin-bottom: 40px;
+  border-bottom: 2px solid rgb(237, 241, 255);
+}
+
+#page_num {
+  text-align: center;
+  margin: 30px 0;
+  font-size: 18px;
+}
+
+#page_num li {
+  display: inline-block;
+  padding: 13px;
+  color: rgb(238, 70, 93);
+}
+
+#page_num a {
+  color: #263343;
+}
+
+#page_num a:hover {
+  text-decoration: underline;
+}
+
+.buttons li {
+  width: 100%;
+  height: 50px;
+  font-size: 20px;
+}
+
+button {
+  width: 100%;
+  height: 100%;
+  border: none;
+  background-color: var(--background-color);
+  border-radius: 5px;
+  color: white;
+  font-weight: bolder;
+}
+
+button:hover {
+  background-color: #ebebeb;
+  color: black;
+  box-shadow: 0 2px 5px 2px rgb(64 60 67 / 25%);
+}
+
+@media screen and (max-width: 767px) {
+  #board_box {
+    width: 80%;
+  }
+}

@@ -15,7 +15,7 @@
       <ul class="navbar__menu">
         <li><a href="main_screen.php">Home</a></li>
         <!-- 나중에 board_list_screen.php로 바꿀 예정 -->
-        <li><a href="board_form_screen.php">Gallery</a></li>
+        <li><a href="board_list_screen.php">Gallery</a></li>
         <li><a href="#">Schedule</a></li>
         <li><a href="#">Diary</a></li>
         <li><a href="./message_screen.php">Message</a></li>
