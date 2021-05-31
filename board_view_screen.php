@@ -119,12 +119,15 @@
 				<?php
 					if($file_name) {
 						$real_name = $file_copied;
-						$file_path = "./data/".$real_name;
+						$file_path = "upload/".$real_name;
 						// $file_size = filesize($file_path);
 
 						echo "<span>📂 $file_name</span>
-			       		<a href='download.php?num=$num&real_name=$real_name&file_name=$file_name&file_type=$file_type'>[저장]</a><br><br>";
-			           	}
+			       		<a href='./php/board_download.php?num=$num&
+                 real_name=$real_name&
+                 file_name=$file_name&
+                 file_type=$file_type'>[저장]</a><br><br>";
+          }
 				?>
         </div>
       </li>
@@ -136,7 +139,7 @@
         <div class="button_right">
           <button onclick="location.href='board_form_screen.php'">글쓰기</button>
           <button onclick="location.href='board_modify_form_screen.php?num=<?=$num?>&page=<?=$page?>'">수정</button>
-          <button onclick="location.href='board_delete.php?num=<?=$num?>&page=<?=$page?>'">삭제</button>
+          <button onclick="location.href='./php/board_delete.php?num=<?=$num?>&page=<?=$page?>'">삭제</button>
         </div>
 		</ul>
 	</div> <!-- board_box -->
