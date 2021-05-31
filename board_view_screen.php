@@ -59,18 +59,18 @@
         else {
         $image_file_image = NULL;
         }
-        //=======================================
+    //=======================================
       $content = str_replace(" ", "&nbsp;", $content);
-	  $content = str_replace("\n", "<br>", $content);
+	    $content = str_replace("\n", "<br>", $content);
 
     // 방문자 조회수 쿠키로 판별 (마지막 접속 이후 24시간이 지나야 조회수 1 증가)
-    $cookie_name = $num;
-    if(!(isset($_COOKIE[$cookie_name]))) {                      //쿠키가 없으면
+    $hit_cookie_name = $num."_hit";
+    if(!(isset($_COOKIE[$hit_cookie_name]))) {                      //쿠키가 없으면
         $new_hit = $hit + 1;                                    // 조회수 1 증가 
         $sql = "update board set hit=$new_hit where num=$num";  
         mysqli_query($con, $sql);
       } 
-    setcookie("$cookie_name", true, time() + (60*60*24));       // 매번 클릭 때마다 쿠키 시간 다시 초기화
+    setcookie("$hit_cookie_name", true, time() + (60*60*24));       // 매번 클릭 때마다 쿠키 시간 다시 초기화
 
 
     mysqli_query($con, $sql);
@@ -83,10 +83,20 @@
 			</li>
             <li>
                 <!-- 좋아요 표시 -->
+                <?php 
+                $like_cookie_name = $num."_like";
+                if(!(isset($_COOKIE[$like_cookie_name]))) { // 좋아요 누른 적이 없으면
+                  $like_icon = "far";
+                  // setcookie("$like_cookie_name", true, time() + 86400*365); // 1년동안 쿠키 유지
+                } else {
+                  $like_icon = "fas";
+                }
+                ?>
                 <span><?=$name?> · <?=$regist_day?></span>
                 <button class="row2" onclick=>
-                    <span><i class="fas fa-heart"></i><?=$like?></span>
+                    <span><i class="<?=$like_icon?> fa-heart"></i><?=$like?></span>
                 </button>
+                <!-- 좋아요 표시 end -->
             </li>
             <li>
                 <div class="image_file"><?php echo $image_file_image; ?></div>
