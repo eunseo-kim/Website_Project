@@ -99,7 +99,7 @@
                 //=======================================
                 ?>
                 <li>
-                  <a href="board_view.php?num=<?=$num?>&page=<?=$page?>">
+                  <a href="board_view_screen.php?num=<?=$num?>&page=<?=$page?>">
                     <div class="image_file"><?php echo $image_file_image; ?></div>
                     <div class="board_list_block">
                       <!-- <span class="col1"><?=$number?></span> -->
