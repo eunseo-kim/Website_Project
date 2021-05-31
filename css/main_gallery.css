@@ -1,0 +1,165 @@
+/* 갤러리 게시판 보기(velog 디자인) */
+:root {
+  --text-color: #f0f4f5;
+  --background-color: #263343;
+  --accent-color: rgb(250, 111, 130);
+}
+
+body {
+  background-color: #fafafa;
+}
+
+#board_box {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+#board_box h3 {
+  font-family: "Pattaya", sans-serif;
+  font-size: 50px;
+  font-weight: lighter;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #c9c9c9;
+}
+
+#board_box .card {
+  /* display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; */
+  width: 250px;
+  height: 235px;
+  margin: 15px;
+  border-radius: 5px;
+  box-shadow: rgb(0 0 0 / 6%) 0px 4px 16px 0px;
+  background-color: white;
+  transition: box-shadow 0.25s ease-in 0s;
+}
+
+#board_box .card:hover {
+  box-shadow: 0 2px 5px 5px rgb(64 60 67 / 10%);
+  transition-property: box-shadow, transform;
+  transition-duration: 0.25s, 0.25s;
+  transition-timing-function: ease-in, ease-in;
+  transition-delay: 0s, 0s;
+}
+
+#board_list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#board_list ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  width: 100%;
+  margin: 20px;
+}
+
+#board_list li a {
+  font-size: 20px;
+  color: black;
+}
+
+.image_file {
+  height: 70%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.image_file img {
+  height: 100%;
+  overflow: hidden;
+  /* height: 100%; */
+  width: 100%;
+  object-fit: fill;
+}
+
+.board_list_block {
+  height: 20%;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background-color: white;
+  padding: 5px;
+}
+
+.board_list_block .row1 {
+  font-size: 15px;
+  font-weight: bolder;
+  margin: 7px;
+}
+
+.board_list_block .row1:hover {
+  text-decoration: underline;
+  color: #1f395a;
+}
+
+.board_list_block .row3 {
+  font-size: 10px;
+  color: rgb(138, 138, 138);
+  width: 95%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 7px;
+}
+
+.board_list_block .row2 {
+  color: #909aa9;
+  display: flex;
+  justify-content: space-between;
+  font-size: 10px;
+  margin: 7px;
+}
+
+#page_num {
+  text-align: center;
+  margin: 30px 0;
+  font-size: 18px;
+}
+
+#page_num li {
+  display: inline-block;
+  padding: 13px;
+  color: rgb(238, 70, 93);
+}
+
+#page_num a {
+  color: #263343;
+}
+
+#page_num a:hover {
+  text-decoration: underline;
+}
+
+.buttons li {
+  width: 100%;
+  height: 50px;
+  font-size: 20px;
+}
+
+button {
+  width: 100%;
+  height: 100%;
+  border: none;
+  background-color: var(--background-color);
+  border-radius: 5px;
+  color: white;
+  font-weight: bolder;
+}
+
+button:hover {
+  background-color: #ebebeb;
+  color: black;
+  box-shadow: 0 2px 5px 2px rgb(64 60 67 / 25%);
+}
+
+@media screen and (max-width: 767px) {
+  #board_box {
+    width: 80%;
+  }
+}

@@ -41,14 +41,6 @@
 		  </h3>
 	    <ul id="board_list">
 				<li>
-          <div class="board_list_nav">
-            <!-- <span class="col1">번호</span>
-            <span class="col2">제목</span>
-            <span class="col3">글쓴이</span>
-            <span class="col4">첨부</span>
-            <span class="col5">등록일</span>
-            <span class="col6">조회</span> -->
-          </div>
           <!-- 각각의 게시물 카드 -->
             <?php
                 if (isset($_GET["page"]))
@@ -57,7 +49,7 @@
                     $page = 1;
 
                 $con = mysqli_connect("localhost", "eunseo", "1205", "diary");
-                $sql = "select * from board where id='$userid' order by num desc";
+                $sql = "select * from board where id='$userid' order by hit desc";
                 $result = mysqli_query($con, $sql);
                 $total_record = mysqli_num_rows($result); // 전체 글 수
 

@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="./css/reset.css" />
     <!-- 메뉴바 css-->
     <link rel="stylesheet" href="./css/navbar.css" />
+    <link rel="stylesheet" href="./css/main_gallery.css" />
     <script src="./js/main.js" defer></script>
   </head>
   <body>
@@ -28,5 +29,6 @@
     <header>
       <?php include "./php/header.php";?>
     </header>
+    <?php include "./php/main_gallery.php";?>
   </body>
 </html>
