@@ -74,9 +74,9 @@
 	
 	$con = mysqli_connect("localhost", "eunseo", "1205", "diary");
 
-	$sql = "insert into board (id, name, subject, content, regist_day, hit,  file_name, file_type, file_copied, like) ";
+	$sql = "insert into board (id, name, subject, content, regist_day, hit,  file_name, file_type, file_copied) ";
 	$sql .= "values('$userid', '$username', '$subject', '$content', '$regist_day', 0, ";
-	$sql .= "'$upfile_name', '$upfile_type', '$copied_file_name', 0)";
+	$sql .= "'$upfile_name', '$upfile_type', '$copied_file_name')";
 	mysqli_query($con, $sql);  // $sql 에 저장된 명령 실행
 
 	mysqli_close($con);                // DB 연결 끊기
