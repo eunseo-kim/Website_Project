@@ -21,7 +21,16 @@
     <link rel="stylesheet" href="./css/reset.css" />
     <!-- 메뉴바 css-->
     <link rel="stylesheet" href="./css/navbar.css" />
+    <link rel="stylesheet" href="./css/board_view.css" />
     <script src="./js/main.js" defer></script>
+
+    <!-- 좋아요 표시 클릭 함수 -->
+    <script>
+     function clickLike() {
+      const button = document.querySelector(".likeBtn")
+     }
+    </script>
+
   </head>
   <body>
     <!-- header.php 실행 -->
@@ -30,9 +39,6 @@
     </header>
     <section>
    	<div id="board_box">
-	    <h3 class="title">
-			게시판 > 내용보기
-		</h3>
 <?php
 	$num  = $_GET["num"];
 	$page  = $_GET["page"];
@@ -79,50 +85,59 @@
 ?>		
 	    <ul id="view_content">
 			<li>
-				<span class="row1"><b>제목 :</b> <?=$subject?></span>
+				<span class="row1"><?=$subject?></span>
 			</li>
-            <li>
-                <!-- 좋아요 표시 -->
-                <?php 
-                $like_cookie_name = $num."_like";
-                if(!(isset($_COOKIE[$like_cookie_name]))) { // 좋아요 누른 적이 없으면
-                  $like_icon = "far";
-                  // setcookie("$like_cookie_name", true, time() + 86400*365); // 1년동안 쿠키 유지
-                } else {
-                  $like_icon = "fas";
-                }
-                ?>
-                <span><?=$name?> · <?=$regist_day?></span>
-                <button class="row2" onclick=>
-                    <span><i class="<?=$like_icon?> fa-heart"></i><?=$like?></span>
-                </button>
-                <!-- 좋아요 표시 end -->
-            </li>
-            <li>
-                <div class="image_file"><?php echo $image_file_image; ?></div>
-            </li>
-			<li>
-				<?=$content?>
+      <li>
+        <div class="row2">
+          <!-- 좋아요 표시 -->
+          <?php 
+          $like_cookie_name = $num."_like";
+          if(!(isset($_COOKIE[$like_cookie_name]))) { // 좋아요 누른 적이 없으면
+            $like_icon = "far";
+            // setcookie("$like_cookie_name", true, time() + 86400*365); // 1년동안 쿠키 유지
+          } else {
+            $like_icon = "fas";
+          }
+          ?>
+          <span><?=$name?> · <?=$regist_day?></span>
+          <!-- <button class="likeBtn" onclick=clickLike()>
+              <i class="<?=$like_icon?> fa-heart"></i>
+              <span><?=$like?></span>
+          </button> -->
+          <!-- 좋아요 표시 end -->
+        </div>
+      </li>
+      <li>
+        <div class="row3">
+          <div class="image_file"><?php echo $image_file_image; ?></div>
+          <div class="content"><?=$content?></div>
+        </div>
 			</li>
-            <!-- 하단에 첨부파일 -->
-            <li>		
+      <!-- 하단에 첨부파일 -->
+      <li>		
+        <div class="file">
 				<?php
 					if($file_name) {
 						$real_name = $file_copied;
 						$file_path = "./data/".$real_name;
 						// $file_size = filesize($file_path);
 
-						echo "▷ 첨부파일 : $file_name &nbsp;&nbsp;&nbsp;&nbsp;
+						echo "<span>📂 $file_name</span>
 			       		<a href='download.php?num=$num&real_name=$real_name&file_name=$file_name&file_type=$file_type'>[저장]</a><br><br>";
 			           	}
 				?>
-            </li>
+        </div>
+      </li>
 	    </ul>
 	    <ul class="buttons">
-				<li><button onclick="location.href='board_list_screen.php?page=<?=$page?>'">목록</button></li>
-				<li><button onclick="location.href='board_modify_form_screen.php?num=<?=$num?>&page=<?=$page?>'">수정</button></li>
-				<li><button onclick="location.href='board_delete.php?num=<?=$num?>&page=<?=$page?>'">삭제</button></li>
-				<li><button onclick="location.href='board_form_screen.php'">글쓰기</button></li>
+        <div class="button_left">
+          <button onclick="location.href='board_list_screen.php?page=<?=$page?>'">↶ 목록보기</button>
+        </div>
+        <div class="button_right">
+          <button onclick="location.href='board_form_screen.php'">글쓰기</button>
+          <button onclick="location.href='board_modify_form_screen.php?num=<?=$num?>&page=<?=$page?>'">수정</button>
+          <button onclick="location.href='board_delete.php?num=<?=$num?>&page=<?=$page?>'">삭제</button>
+        </div>
 		</ul>
 	</div> <!-- board_box -->
 </section> 
@@ -132,3 +147,5 @@
 </section>
   </body>
 </html>
+
+
