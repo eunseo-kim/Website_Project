@@ -17,7 +17,7 @@
         <!-- 나중에 board_list_screen.php로 바꿀 예정 -->
         <li><a href="board_list_screen.php">Gallery</a></li>
         <li><a href="#">Schedule</a></li>
-        <li><a href="#">Diary</a></li>
+        <li><a href="./donate_screen.php">Donate</a></li>
         <li><a href="./message_screen.php">Message</a></li>
       </ul>
       <!-- 만약 사용자라면, 마이페이지 & 로그아웃-->
@@ -47,13 +47,13 @@
         <li>
           <!-- 회원가입 -->
           <a href="sign_up_screen.php">
-            <i class="far fa-plus-square"></i>
+            <i class="fas fa-user-plus"></i>
           </a>
         </li>
         <li>
           <!-- 로그인 -->
           <a href="login_screen.php">
-            <i class="fas fa-user"></i>
+          <i class="fas fa-sign-in-alt"></i>
           </a>
         </li>
       </ul>     
