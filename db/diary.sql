@@ -15,7 +15,7 @@ SET time_zone = "+00:00";
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8mb4 */;
+/*!40101 SET NAMES utf8 */;
 
 --
 -- 데이터베이스: `diary`
@@ -39,7 +39,7 @@ CREATE TABLE `board` (
   `file_type` char(40) DEFAULT NULL,
   `file_copied` char(40) DEFAULT NULL,
   `like` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- 테이블의 덤프 데이터 `board`
@@ -67,7 +67,7 @@ CREATE TABLE `members` (
   `name` char(10) NOT NULL,
   `email` char(80) DEFAULT NULL,
   `regist_day` char(20) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- 테이블의 덤프 데이터 `members`
@@ -91,7 +91,7 @@ CREATE TABLE `message` (
   `subject` char(200) NOT NULL,
   `content` text NOT NULL,
   `regist_day` char(20) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- 테이블의 덤프 데이터 `message`
