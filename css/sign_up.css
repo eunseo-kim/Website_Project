@@ -83,4 +83,13 @@
   #main_content {
     width: 100%;
   }
+
+  #join_box .form input {
+    width: 80%;
+    height: 22px;
+  }
+
+  #join_box input[name="email2"] {
+    width: 60%;
+  }
 }
