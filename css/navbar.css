@@ -20,6 +20,7 @@ a {
   align-items: center;
   background-color: var(--background-color);
   padding: 18px 20px;
+  width: 100%;
 }
 
 .navbar__logo {
