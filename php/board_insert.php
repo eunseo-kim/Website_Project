@@ -78,13 +78,18 @@
 	// $sql = "insert into board (id, name, subject, content, regist_day, hit,  file_name, file_type, file_copied) ";
 	$sql .= "values('$userid', '$username', '$subject', '$content', '$regist_day', 0)";
 	// $sql .= "'$upfile_name', '$upfile_type', '$copied_file_name')";
-	mysqli_query($con, $sql);  // $sql 에 저장된 명령 실행
+	// mysqli_query($con, $sql);  // $sql 에 저장된 명령 실행
+	if ( !mysqli_query ($con, $sql )){
+	
+		echo("쿼리오류 발생: " . mysqli_error($con));
+	
+	}
 
 	mysqli_close($con);                // DB 연결 끊기
 
 	echo "
 	   <script>
-	    location.href = '../board_list_screen.php';
+	    location.href = '../board_insert.php';
 	   </script>
 	";
 ?>
