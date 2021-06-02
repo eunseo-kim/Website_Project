@@ -76,7 +76,7 @@
 
 	// $sql = "insert into board (id, name, subject, content, regist_day) ";
 	$sql = "insert into board (id, name, subject, content, regist_day, file_name, file_type, file_copied) ";
-	$sql .= "values('$userid', '$username', '$subject', '$content', '$regist_day'), ";
+	$sql .= "values('$userid', '$username', '$subject', '$content', '$regist_day', ";
 	$sql .= "'$upfile_name', '$upfile_type', '$copied_file_name')";
 	// mysqli_query($con, $sql);  // $sql 에 저장된 명령 실행
 	if ( !mysqli_query ($con, $sql )){
