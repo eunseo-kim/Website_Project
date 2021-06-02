@@ -55,7 +55,7 @@
 	    <form  name="board_form" method="post" action="./php/board_insert.php" enctype="multipart/form-data">
 	    	 <ul id="board_form">	
 	    			<span class="board_form__title"><input name="subject" type="text" placeholder ="제목을 입력하세요"></span>
-            <!-- <span class="board_form__image_file"><input type="file" name="upfile"></span> -->
+            <span class="board_form__image_file"><input type="file" name="upfile"></span>
             <textarea name="content" placeholder="당신의 이야기를 적어보세요..."></textarea>
           </ul>
           <ul class="buttons">
