@@ -68,7 +68,8 @@
             <!-- 파일도 다시 첨부할 수 있도록 할 수는 없을까? -->
             <?php 
                 if (!$file_name) {
-                    echo "<span class='board_form__image_file' id='target_file'><input type='file' name='upfile'></span>";
+                  // error (사진 수정이 안됨)
+                    // echo "<span class='board_form__image_file' id='target_file'><input type='file' name='upfile'></span>";
                 }
                 else {
                     echo "<span class='board_form__image_file' id='target_file'>📂 $file_name</span>";

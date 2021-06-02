@@ -17,7 +17,7 @@
                     $result = mysqli_query($con, $sql);
                     $total_record = mysqli_num_rows($result); // 전체 글 수
 
-                    $scale = 9;
+                    $scale = 12;
                     // $scale = 1;
 
                     // 전체 페이지 수($total_page) 계산 
@@ -83,7 +83,7 @@
             if ($total_page>=2 && $page >= 2)	
             {
                 $new_page = $page-1;
-                echo "<li><a href='board_list_screen.php?page=$new_page'>◀</a> </li>";
+                echo "<li><a href='main_screen.php?page=$new_page'>◀</a> </li>";
             }		
 
             // 게시판 목록 하단에 페이지 링크 번호 출력
@@ -95,13 +95,13 @@
                 }
                 else
                 {
-                    echo "<li><a href='board_list_screen.php?page=$i'>$i</a></li>";
+                    echo "<li><a href='main_screen.php?page=$i'>$i</a></li>";
                 }
             }
             if ($total_page>=2 && $page != $total_page)		
             {
                 $new_page = $page+1;	
-                echo "<li> <a href='board_list_screen.php?page=$new_page'>▶</a></li>";
+                echo "<li> <a href='main_screen.php?page=$new_page'>▶</a></li>";
             }
         ?>
 			</ul> <!-- page -->	    	

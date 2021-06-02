@@ -49,7 +49,7 @@
                     $page = 1;
 
                 $con = mysqli_connect("localhost", "eunseo", "1205", "diary");
-                $sql = "select * from board where id='$userid' order by hit desc";
+                $sql = "select * from board where id='$userid' order by num desc";
                 $result = mysqli_query($con, $sql);
                 $total_record = mysqli_num_rows($result); // 전체 글 수
 
