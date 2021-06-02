@@ -74,9 +74,9 @@
 	
 	$con = mysqli_connect("localhost", "root", "s6139350!", "diary");
 
-	$sql = "insert into board (id, name, subject, content, regist_day, hit) ";
+	$sql = "insert into board (id, name, subject, content, regist_day, hit, like) ";
 	// $sql = "insert into board (id, name, subject, content, regist_day, hit,  file_name, file_type, file_copied) ";
-	$sql .= "values('$userid', '$username', '$subject', '$content', '$regist_day', 0)";
+	$sql .= "values('$userid', '$username', '$subject', '$content', '$regist_day', 0, 0)";
 	// $sql .= "'$upfile_name', '$upfile_type', '$copied_file_name')";
 	// mysqli_query($con, $sql);  // $sql 에 저장된 명령 실행
 	if ( !mysqli_query ($con, $sql )){
