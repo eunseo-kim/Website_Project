@@ -50,7 +50,7 @@
 	$num  = $_GET["num"];
 	$page = $_GET["page"];
 	
-	$con = mysqli_connect("localhost", "eunseo", "1205", "diary");
+	$con = mysqli_connect("localhost", "root", "s6139350!", "diary");
 	$sql = "select * from board where num=$num";
 	$result = mysqli_query($con, $sql);
 	$row = mysqli_fetch_array($result);

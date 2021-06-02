@@ -12,7 +12,7 @@
                     else
                         $page = 1;
 
-                    $con = mysqli_connect("localhost", "eunseo", "1205", "diary");
+                    $con = mysqli_connect("localhost", "root", "s6139350!", "diary");
                     $sql = "select * from board order by hit desc";
                     $result = mysqli_query($con, $sql);
                     $total_record = mysqli_num_rows($result); // 전체 글 수

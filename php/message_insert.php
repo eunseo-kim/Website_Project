@@ -19,7 +19,7 @@
 		exit;
 	}
 
-	$con = mysqli_connect("localhost", "eunseo", "1205", "diary");
+	$con = mysqli_connect("localhost", "root", "s6139350!", "diary");
 	$sql = "select * from members where id='$rv_id'";
 	$result = mysqli_query($con, $sql);
 	$num_record = mysqli_num_rows($result);

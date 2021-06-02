@@ -59,7 +59,7 @@
 			$copied_file_name = "";
 		}
 
-		$con = mysqli_connect("localhost", "eunseo", "1205", "diary");
+		$con = mysqli_connect("localhost", "root", "s6139350!", "diary");
 		$sql = "insert into board (id, name, subject, content, file_name, file_type, file_copied) ";
 		$sql .= "values('$userid', '$username', '$subject', '$content', ";
 		$sql .= "'$upfile_name', '$upfile_type', '$copied_file_name')";
@@ -72,7 +72,7 @@
 	}
 	// 파일 변화 없
 	else {
-		$con = mysqli_connect("localhost", "eunseo", "1205", "diary");
+		$con = mysqli_connect("localhost", "root", "s6139350!", "diary");
 		$sql = "update board set subject='$subject', content='$content'";
 		$sql .= " where num=$num";
 		mysqli_query($con, $sql);

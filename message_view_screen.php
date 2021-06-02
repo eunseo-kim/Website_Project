@@ -39,7 +39,7 @@
               $mode = $_GET["mode"];
               $num  = $_GET["num"];
 
-              $con = mysqli_connect("localhost", "eunseo", "1205", "diary");
+              $con = mysqli_connect("localhost", "root", "s6139350!", "diary");
               $sql = "select * from message where num=$num";
               $result = mysqli_query($con, $sql);
 

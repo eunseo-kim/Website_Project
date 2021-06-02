@@ -72,7 +72,7 @@
               <span class="col4">날짜</span>
             </li>
             <?php
-              $con = mysqli_connect("localhost", "eunseo", "1205", "diary");
+              $con = mysqli_connect("localhost", "root", "s6139350!", "diary");
 
               if ($mode=="send")
                 $sql = "select * from message where send_id='$userid' order by num desc";

@@ -39,7 +39,7 @@
                 }
                 else
                 {
-                    $con = mysqli_connect("localhost", "eunseo", "1205", "diary");               
+                    $con = mysqli_connect("localhost", "root", "s6139350!", "diary");               
                     $sql = "select * from members where id='$id'";
                     $result = mysqli_query($con, $sql);
                     $id_usable = false;

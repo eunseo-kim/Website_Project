@@ -72,7 +72,7 @@
 		$copied_file_name = "";
 	}
 	
-	$con = mysqli_connect("localhost", "eunseo", "1205", "diary");
+	$con = mysqli_connect("localhost", "root", "s6139350!", "diary");
 
 	$sql = "insert into board (id, name, subject, content, regist_day, hit,  file_name, file_type, file_copied) ";
 	$sql .= "values('$userid', '$username', '$subject', '$content', '$regist_day', 0, ";

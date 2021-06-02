@@ -34,7 +34,7 @@
     </header>
       <!-- 마이페이지 -->
       <?php    
-          $con = mysqli_connect("localhost", "eunseo", "1205", "diary");
+          $con = mysqli_connect("localhost", "root", "s6139350!", "diary");
           $sql    = "select * from members where id='$userid'";
           $result = mysqli_query($con, $sql);
           $row    = mysqli_fetch_array($result);

@@ -4,7 +4,7 @@
 	$num = $_GET["num"];
 	$mode = $_GET["mode"];
 
-	$con = mysqli_connect("localhost", "eunseo", "1205", "diary");
+	$con = mysqli_connect("localhost", "root", "s6139350!", "diary");
 	$sql = "delete from message where num=$num";
 	mysqli_query($con, $sql);
 	mysqli_close($con);                // DB 연결 끊기

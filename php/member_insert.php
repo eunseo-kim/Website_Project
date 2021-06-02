@@ -9,7 +9,7 @@
     $regist_day = date("Y-m-d (H:i)");  // 현재의 '년-월-일-시-분'을 저장
 
     // mysqli_connect(host, username, password, dbname)
-    $con = mysqli_connect("localhost", "eunseo", "1205", "diary");
+    $con = mysqli_connect("localhost", "root", "s6139350!", "diary");
 
 	$sql = "insert into members(id, pass, name, email, regist_day)";
 	$sql .= "values('$id', '$pass', '$name', '$email', '$regist_day')";
