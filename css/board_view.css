@@ -146,6 +146,7 @@
   .buttons .button_right {
     display: block;
     width: 100%;
+    margin-bottom: 10px;
   }
 
   .buttons button {
