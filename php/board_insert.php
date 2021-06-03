@@ -87,11 +87,11 @@
 
 	mysqli_close($con);                // DB 연결 끊기
 
-	echo "
-	   <script>
-	    location.href = '../board_list_screen.php';
-	   </script>
-	";
+	// echo "
+	//    <script>
+	//     location.href = '../board_list_screen.php';
+	//    </script>
+	// ";
 ?>
 
   
