@@ -34,7 +34,7 @@
           document.member_form.id.focus();
           return;
           }
-          
+
           if (!document.member_form.pass.value) {
             alert("비밀번호를 입력하세요!");
             document.member_form.pass.focus();
@@ -110,8 +110,8 @@
                 <div class="form row1">아이디</div>
                 <div class="form insert_id">
                   <input type="text" name="id" />
-                  <button class="check_id" onclick="check_id()">중 복 확 인</button>
                 </div>
+                <button class="check_id" onclick="check_id()">중 복 확 인</button>
               </div>
               <!-- <div class="col3">
                 <a href="#"><img src="./img/check_id.gif" onclick="check_id()" /></a>
