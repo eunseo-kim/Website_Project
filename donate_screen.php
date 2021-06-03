@@ -60,7 +60,7 @@
         pay_method : 'card',
         merchant_uid : 'merchant_' + new Date().getTime(),
         name : '초보 개발자 키우기',
-        amount : 100,
+        amount : 1000,
         buyer_email : '',
         buyer_name : '',
         buyer_tel : '',
