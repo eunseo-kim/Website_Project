@@ -153,7 +153,6 @@
 <section>
 
 </section>
-    <?php include "./php/footer.php";?>
   </body>
 </html>
 

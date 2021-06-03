@@ -88,6 +88,5 @@
 	    </form>
 	</div> <!-- board_box -->
 </section> 
-    <?php include "./php/footer.php";?>
   </body>
 </html>
