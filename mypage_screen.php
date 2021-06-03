@@ -78,8 +78,8 @@
 
                   <div class="form email row1">이메일
                   <!-- <div class="col2"><input type="text" name="email" /></div> -->
-                  <div class="form email1"><input type="text" name=<?=$email1?> /> @</div>
-                  <div class="form email2"><input type="text" name=<?=$email2?> /></div>
+                  <div class="form email1"><input type="text" name="email1" value="<?=$email1?>"/> @</div>
+                  <div class="form email2"><input type="text" name="email2" value="<?=$email2?>"/></div>
 
               </div>
               <div class="form buttons">
