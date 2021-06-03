@@ -26,6 +26,7 @@
     <!-- 메뉴바 css-->
     <link rel="stylesheet" href="./css/navbar.css" />
     <link rel="stylesheet" href="./css/main_gallery.css" />
+    <link rel="stylesheet" href="./css/donate.css" />
     <script src="./js/main.js" defer></script>
   </head>
   <body>
@@ -34,7 +35,13 @@
       <?php include "./php/header.php";?>
     </header>
     <section>
-        <button onClick="donate()">주세요</button>
+      <div class="donate_box">
+        <div class="donate_text">
+          <h3>Donate for Daily</h3>
+          <div>후원해주시면 개발하는데 많은 힘이 됩니다 :)</div>
+        </div>
+          <button onClick="donate()">응원하기</button>
+      </div>
     </section>
   </body>
 </html>
