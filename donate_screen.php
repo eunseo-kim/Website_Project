@@ -59,8 +59,8 @@
         pg : 'inicis', // version 1.1.0부터 지원.
         pay_method : 'card',
         merchant_uid : 'merchant_' + new Date().getTime(),
-        name : '개발자 키우기',
-        amount : 1000,
+        name : '초보 개발자 키우기',
+        amount : 100,
         buyer_email : '',
         buyer_name : '',
         buyer_tel : '',
