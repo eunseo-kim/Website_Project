@@ -106,13 +106,13 @@
         <div id="join_box">
           <!-- member_insert.php 연결 -->
           <form name="member_form" method="post" action="./php/member_insert.php">
-              <div class="form id">
                 <div class="form row1">아이디</div>
                 <div class="form insert_id">
                   <input type="text" name="id" />
                 </div>
-                <button class="check_id" onclick="check_id()">중 복 확 인</button>
-              </div>
+                <div class="check">
+                <span class="check_id" onclick="check_id()">중복확인</span>
+                </div>
               <!-- <div class="col3">
                 <a href="#"><img src="./img/check_id.gif" onclick="check_id()" /></a>
               </div> -->

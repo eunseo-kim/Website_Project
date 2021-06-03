@@ -21,6 +21,10 @@
   display: block;
   line-height: 1.2;
 }
+
+#join_box form {
+  width: 100%;
+}
 #main_content h2 {
   display: flex;
   justify-content: center;
@@ -109,16 +113,17 @@
   background-color: var(--accent-color);
 }
 
-#join_box .check_id {
+#join_box .check {
   background-color: #e7e7e7;
-  width: 100%;
-  padding: 5px 10px;
-  border-radius: 4px;
+  width: 20%;
+  padding: 8px 14px;
+  border-radius: 45px;
   font-size: smaller;
-  margin-left: 5px;
+  margin-top: 10px;
+  text-align: center;
 }
 
-#join_box span:hover {
+#join_box .check:hover {
   cursor: pointer;
   background-color: var(--background-color);
   color: var(--text-color);
