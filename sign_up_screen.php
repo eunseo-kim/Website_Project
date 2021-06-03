@@ -33,51 +33,38 @@
     <!--  회원가입 -->
     <section>
       <div id="main_content">
+      <h2>Create your account</h2>
+
         <div id="join_box">
           <!-- member_insert.php 연결 -->
           <form name="member_form" method="post" action="./php/member_insert.php">
-            <h2>Create your account</h2>
-            <div class="form id">
-              <div class="col1">아이디</div>
-              <div class="col2">
+              <div class="form id row1">아이디</div>
+              <div class="form insert_id">
                 <input type="text" name="id" />
+                <button class="check_id">중 복 확 인</button>
               </div>
-              <div class="col3">
-                <span class="check_id">중복확인</span>
-                <!-- <a href="#"><img src="./img/check_id.gif" onclick="check_id()" /></a> -->
-              </div>
-            </div>
-            <div class="clear"></div>
+              <!-- <div class="col3">
+                <a href="#"><img src="./img/check_id.gif" onclick="check_id()" /></a>
+              </div> -->
 
-            <div class="form">
-              <div class="col1">비밀번호</div>
-              <div class="col2">
+              <div class="form pass row1">비밀번호</div>
+              <div class="form insert_pass">
                 <input type="password" name="pass" />
-              </div>
             </div>
-            <div class="clear"></div>
-            <div class="form">
-              <div class="col1">비밀번호 확인</div>
-              <div class="col2">
+              <div class="for pass row1">비밀번호 확인</div>
+              <div class="form insert_pass">
                 <input type="password" name="pass_confirm" />
               </div>
-            </div>
-            <div class="clear"></div>
-            <div class="form">
-              <div class="col1">이름</div>
-              <div class="col2">
+              <div class="form name row1">이름</div>
+              <div class="form insert_name">
                 <input type="text" name="name" />
               </div>
-            </div>
-            <div class="clear"></div>
-            <div class="form email">
-              <div class="col1">이메일</div>
-              <!-- <div class="col2"><input type="text" name="email" /></div> -->
-              <div class="col2"><input type="text" name="email1" />&nbsp;@&nbsp;<input type="text" name="email2" /></div>
-            </div>
-            <div class="clear"></div>
-            <div class="bottom_line"></div>
-            <div class="buttons">
+              <div class="form email row1">이메일
+                <!-- <div class="col2"><input type="text" name="email" /></div> -->
+                <div class="form email1"><input type="text" name="email1" /> @</div>
+                <div class="form email2"><input type="text" name="email2" /></div>
+              </div>
+            <div class="form buttons">
               <span class="saveBtn">저장하기</span>
               <span class="resetBtn">취소하기</span>
               <!-- <img style="cursor: pointer" src="./img/button_save.gif" onclick="check_input()" />&nbsp;
