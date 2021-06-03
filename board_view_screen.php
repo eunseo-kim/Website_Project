@@ -60,7 +60,7 @@
 	$hit          = $row["hit"];
     $like         = $row["like"];
     // 첨부 파일이 이미지인 경우, 미리보기 화면에 해당 이미지를 띄운다
-    if ($file_type == "image/jpeg" || $file_type == "image/png" || $file_type == "image/jpg") {
+    if ($file_type == "image/jpeg" || $file_type == "image/png" || $file_type == "image/jpg" || $file_type == "image/gif") {
         $image_file_image = "<img src='upload/{$file_copied}' class='image_file'>";
         }
         else {
