@@ -51,48 +51,38 @@
       ?>
       <section>
           <div id="main_content">
+        <h2>회원 정보 수정</h2>
           <div id="join_box">
               <!-- 수정 후 'saveBtn' 누른 후 member_modify.js에서 submit() 하면 member_modify.php에서 실제로 업데이트됨 -->
               <form  name="member_form" method="post" action="./php/member_modify.php?id=<?=$userid?>">
               
-              <h2>회원 정보 수정</h2>
-              <div class="form id">
-                  <div class="col1">아이디</div>
-                  <div class="col2">
+                <div class="form id row1">아이디</div>
+                <div class="form insert_id">
                       <?= $userid ?>
-                  </div>
-              </div>
-              <div class="clear"></div>
+                </div>
 
-              <div class="form">
-                  <div class="col1">비밀번호</div>
-                  <div class="col2">
+                <div class="form pass row1">비밀번호</div>
+                <div class="form insert_pass">
                   <input type="password" name="pass" value="<?= $pass?>"/>
                   </div>
-              </div>
-              <div class="clear"></div>
-              <div class="form">
-                  <div class="col1">비밀번호 확인</div>
-                  <div class="col2">
+
+                  <div class="for pass row1">비밀번호 확인</div>
+                  <div class="form insert_pass">
                   <input type="password" name="pass_confirm" value="<?= $pass?>"/>
                   </div>
-              </div>
-              <div class="clear"></div>
-              <div class="form">
-                  <div class="col1">이름</div>
-                  <div class="col2">
+
+                  <div class="form name row1">이름</div>
+                  <div class="form insert_name">
                   <input type="text" name="name" value="<?= $name?>"/>
                   </div>
-              </div>
-              <div class="clear"></div>
-              <div class="form email">
-                  <div class="col1">이메일</div>
+
+                  <div class="form email row1">이메일
                   <!-- <div class="col2"><input type="text" name="email" /></div> -->
-                  <div class="col2"><input type="text" name="email1" value="<?= $email1?>"/>&nbsp;@&nbsp;<input type="text" name="email2"value="<?= $email2?>" /></div>
+                  <div class="form email1"><input type="text" name="email1" /> @</div>
+                  <div class="form email2"><input type="text" name="email2" /></div>
+
               </div>
-              <div class="clear"></div>
-              <div class="bottom_line"></div>
-              <div class="buttons">
+              <div class="form buttons">
                   <span class="saveBtn">수정하기</span>
                   <span class="resetBtn">취소하기</span>
                   <!-- <img style="cursor: pointer" src="./img/button_save.gif" onclick="check_input()" />&nbsp;
