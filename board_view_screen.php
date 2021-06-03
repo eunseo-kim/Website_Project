@@ -99,11 +99,11 @@
             $like_icon = "fas";
           }
           ?>
-          <span><?=$name?> · <?=$regist_day?></span>
+          <!-- <span><?=$name?> · <?=$regist_day?></span>
           <button class="likeBtn" onclick=clickLike()>
               <i class="<?=$like_icon?> fa-heart"></i>
               <span><?=$like?></span>
-          </button>
+          </button> -->
           <!-- 좋아요 표시 end -->
         </div>
       </li>

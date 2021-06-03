@@ -134,4 +134,21 @@
   #board_box li .image_file img {
     width: 100%;
   }
+  .buttons {
+    display: block;
+  }
+
+  .buttons .button_left {
+    display: block;
+    width: 100%;
+  }
+
+  .buttons .button_right {
+    display: block;
+    width: 100%;
+  }
+
+  .buttons button {
+    width: 100%;
+  }
 }
