@@ -160,6 +160,5 @@
         </ul> <!-- page -->	    	
       </div> <!-- message_box -->
     </section> 
-    <?php include "./php/footer.php";?>
   </body>
 </html>
