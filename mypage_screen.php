@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="./css/reset.css" />
     <!-- 메뉴바 css-->
     <link rel="stylesheet" href="./css/navbar.css" />
+<link rel="stylesheet" href="./css/footer.css" />
     <!-- (마이페이지와 동일)sign-up.css -->
     <link rel="stylesheet" href="./css/sign_up.css" />
 
@@ -103,5 +104,6 @@
           </div>
           <!-- main_content -->
       </section>
+    <?php include "./php/footer.php";?>
   </body>
 </html>

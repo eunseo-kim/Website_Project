@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="./css/reset.css" />
     <!-- 메뉴바 css-->
     <link rel="stylesheet" href="./css/navbar.css" />
+<link rel="stylesheet" href="./css/footer.css" />
     <!-- 쪽지 보내기 css를 한번 더 사용 -->
     <link rel="stylesheet" href="./css/message_response_form.css" />
     <script src="./js/main.js" defer></script>
@@ -88,5 +89,6 @@
     </form>
 	</div> <!-- message_box -->
 </section> 
+    <?php include "./php/footer.php";?>
   </body>
 </html>

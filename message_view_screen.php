@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="./css/reset.css" />
     <!-- 메뉴바 css-->
     <link rel="stylesheet" href="./css/navbar.css" />
+<link rel="stylesheet" href="./css/footer.css" />
     <!-- 메세지 보기 css -->
     <link rel="stylesheet" href="./css/message_view.css" />
     <script src="./js/main.js" defer></script>

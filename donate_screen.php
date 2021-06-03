@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="./css/reset.css" />
     <!-- 메뉴바 css-->
     <link rel="stylesheet" href="./css/navbar.css" />
+<link rel="stylesheet" href="./css/footer.css" />
     <link rel="stylesheet" href="./css/main_gallery.css" />
     <link rel="stylesheet" href="./css/donate.css" />
     <script src="./js/main.js" defer></script>
@@ -44,6 +45,9 @@
         </div>
       </div>
     </section>
+    <?php include "./php/footer.php";?>
+
+    <?php include "./php/footer.php";?>
   </body>
 </html>
 

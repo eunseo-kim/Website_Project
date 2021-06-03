@@ -1,0 +1,31 @@
+:root {
+  --text-color: #f0f4f5;
+  --background-color: #263343;
+  --accent-color: rgb(250, 111, 130);
+}
+
+footer {
+  margin-top: 530px;
+  height: 100px;
+  background-color: var(--background-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .my_info {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 5px;
+}
+
+footer .my_info i {
+  padding: 5px;
+}
+
+footer .copyright {
+  font-size: 12px;
+  color: white;
+}

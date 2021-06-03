@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="./css/reset.css" />
     <!-- 메뉴바 css-->
     <link rel="stylesheet" href="./css/navbar.css" />
+<link rel="stylesheet" href="./css/footer.css" />
     <!-- 글쓰기 css -->
     <link rel="stylesheet" href="./css/board_list_screen.css" />
 
@@ -156,5 +157,6 @@
 			</ul>
 	</div> <!-- board_box -->
 </section> 
+    <?php include "./php/footer.php";?>
   </body>
 </html>

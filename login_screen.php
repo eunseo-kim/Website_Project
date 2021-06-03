@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="./css/reset.css" />
     <!-- 메뉴바 css-->
     <link rel="stylesheet" href="./css/navbar.css" />
+<link rel="stylesheet" href="./css/footer.css" />
     <!-- 로그인 css -->
     <link rel="stylesheet" href="./css/login.css" />
     <script src="./js/main.js" defer></script>
@@ -69,9 +70,7 @@
       </div>
       <!-- main_content -->
     </section>
-    <footer>
-      <!-- <?php include "footer_screen.php";?> -->
-    </footer>
     <!-- 로그인 end -->
+    <?php include "./php/footer.php";?>
   </body>
 </html>

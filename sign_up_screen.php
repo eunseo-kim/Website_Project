@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="./css/reset.css" />
     <!-- 메뉴바 css-->
     <link rel="stylesheet" href="./css/navbar.css" />
+<link rel="stylesheet" href="./css/footer.css" />
     <!-- 회원가입 css -->
     <link rel="stylesheet" href="./css/sign_up.css" />
     <script src="./js/main.js" defer></script>
@@ -76,5 +77,6 @@
       </div>
       <!-- main_content -->
     </section>
+    <?php include "./php/footer.php";?>
   </body>
 </html>

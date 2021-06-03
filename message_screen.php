@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="./css/reset.css" />
     <!-- 메뉴바 css-->
     <link rel="stylesheet" href="./css/navbar.css" />
+<link rel="stylesheet" href="./css/footer.css" />
     <!-- 메세지 css -->
     <link rel="stylesheet" href="./css/message.css" />
 
@@ -87,5 +88,6 @@
           <button type="button" onclick="check_input()">보내기</button>
       </div> <!-- message_box -->
     </section>
+    <?php include "./php/footer.php";?>
   </body>
 </html>

@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="./css/reset.css" />
     <!-- 메뉴바 css-->
     <link rel="stylesheet" href="./css/navbar.css" />
+<link rel="stylesheet" href="./css/footer.css" />
     <!-- 쪽지함 css -->
     <link rel="stylesheet" href="./css/message_box.css" />
 
@@ -159,5 +160,6 @@
         </ul> <!-- page -->	    	
       </div> <!-- message_box -->
     </section> 
+    <?php include "./php/footer.php";?>
   </body>
 </html>
