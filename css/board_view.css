@@ -12,7 +12,6 @@
   width: 70%;
   height: 300px;
   padding: 10px;
-  margin-bottom: 50px;
 }
 
 #board_box .row1 {
@@ -99,6 +98,8 @@
 #board_box .buttons {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 20px;
+  padding-bottom: 30px;
 }
 
 #board_box .buttons button {
