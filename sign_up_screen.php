@@ -42,7 +42,7 @@
               <div class="form id row1">아이디</div>
               <div class="form insert_id">
                 <input type="text" name="id" />
-                <button class="check_id">중 복 확 인</button>
+                <button class="check_id" onclick="check_id()">중 복 확 인</button>
               </div>
               <!-- <div class="col3">
                 <a href="#"><img src="./img/check_id.gif" onclick="check_id()" /></a>
@@ -66,8 +66,8 @@
                 <div class="form email2"><input type="text" name="email2" /></div>
               </div>
             <div class="form buttons">
-              <span class="saveBtn">저장하기</span>
-              <span class="resetBtn">취소하기</span>
+              <span class="saveBtn" onclick="check_input()">저장하기</span>
+              <span class="resetBtn" onclick="reset_form()">취소하기</span>
               <!-- <img style="cursor: pointer" src="./img/button_save.gif" onclick="check_input()" />&nbsp;
               <img id="reset_button" style="cursor: pointer" src="./img/button_reset.gif" onclick="reset_form()" /> -->
             </div>
