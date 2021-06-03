@@ -5,6 +5,7 @@ const check_ID = document.querySelector(".check_id");
 saveBtn.addEventListener("click", () => check_input());
 resetBtn.addEventListener("click", () => reset_form());
 check_ID.addEventListener("click", () => check_id());
+var is_usable = false;
 
 function check_id() {
   window.open("./php/member_check_id.php?id=" + document.member_form.id.value, "IDcheck", "left=700,top=300,width=350,height=200,scrollbars=no,resizable=no");
