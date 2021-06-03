@@ -141,8 +141,8 @@
           <!-- 수정(자기자신의 글만 수정, 삭제 가능) -->
           <?php
             if ($userid == $id) {
-            echo "<button onclick='location.href='board_modify_form_screen.php?num=<?=$num?>&page=<?=$page?>'>수정</button>";
-            echo "<button onclick='location.href='./php/board_delete.php?num=<?=$num?>&page=<?=$page?>'>삭제</button>";
+            echo "<button onclick=\"location.href='board_modify_form_screen.php?num=<?=$num?>&page=<?=$page?>'\">수정</button>";
+            echo "<button onclick=\"location.href='./php/board_delete.php?num=<?=$num?>&page=<?=$page?>'\">삭제</button>";
           }?>
           </div>
 		</ul>
