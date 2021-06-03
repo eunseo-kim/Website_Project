@@ -84,6 +84,7 @@
 
     </script>
     <script src="./js/main.js" defer></script>
+    <!-- <script src="./js/sign_up.js" defer></script> -->
   </head>
   <body>
     <!-- header.php 실행 -->
@@ -100,7 +101,7 @@
           <!-- member_insert.php 연결 -->
           <form name="member_form" method="post" action="./php/member_insert.php">
               <div class="form id row1">아이디</div>
-              <div class="form insert_id">
+              <div class="form id insert_id">
                 <input type="text" name="id" />
                 <button class="check_id" onclick="check_id()">중 복 확 인</button>
               </div>
