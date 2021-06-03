@@ -88,6 +88,5 @@
           <button type="button" onclick="check_input()">보내기</button>
       </div> <!-- message_box -->
     </section>
-    <?php include "./php/footer.php";?>
   </body>
 </html>
