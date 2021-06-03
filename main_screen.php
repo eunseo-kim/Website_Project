@@ -31,5 +31,7 @@
       <?php include "./php/header.php";?>
     </header>
     <?php include "./php/main_gallery.php";?>
+
+    <?php include "./php/footer.php";?>
   </body>
 </html>

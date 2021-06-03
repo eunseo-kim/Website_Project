@@ -100,8 +100,8 @@
             $like_icon = "fas";
           }
           ?>
-          <!-- <span><?=$name?> · <?=$regist_day?></span>
-          <button class="likeBtn" onclick=clickLike()>
+          <span><?=$name?> · <?=$regist_day?></span>
+          <!-- <button class="likeBtn" onclick=clickLike()>
               <i class="<?=$like_icon?> fa-heart"></i>
               <span><?=$like?></span>
           </button> -->
