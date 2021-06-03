@@ -38,9 +38,10 @@
       <div class="donate_box">
         <div class="donate_text">
           <h3>Donate for Daily</h3>
-          <div>후원해주시면 개발하는데 많은 힘이 됩니다 :)</div>
-        </div>
+          <div class="donate_img"><img src="./img/donate.png" alt=""></div>
+          <div class="donate_info">🌼후원해주시면 개발하는데 많은 힘이 됩니다🌼</div>
           <button onClick="donate()">응원하기</button>
+        </div>
       </div>
     </section>
   </body>

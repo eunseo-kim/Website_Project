@@ -1,9 +1,64 @@
+:root {
+  --text-color: #f0f4f5;
+  --background-color: #263343;
+  --accent-color: rgb(250, 111, 130);
+}
+.donate_box {
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: lighter;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+
 .donate_text {
-  margin-top: 50px;
   width: 80%;
   align-items: center;
-  display: block;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  flex-direction: row;
   margin: 0 auto;
+}
+
+.donate_text h3 {
+  font-family: "Pattaya", sans-serif;
+  font-size: 30px;
+  text-align: center;
+  border-bottom: solid 1px #dee1e4;
+  padding-top: 50px;
+  padding-bottom: 10px;
+  width: 100%;
+}
+
+.donate_text .donate_img {
+  width: 45%;
+  margin: 0 auto;
+}
+
+.donate_text img {
+  width: 100%;
+}
+
+.donate_info {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  font: 10px;
+  font-weight: bold;
+}
+
+.donate_text button {
+  width: 45%;
+  height: 40px;
+  border-radius: 45px;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #ebebeb;
+  color: black;
+}
+
+.donate_text button:hover {
+  background-color: #f1f1f1;
+  box-shadow: 0 1px 3px 1px rgb(64 60 67 / 20%);
 }
