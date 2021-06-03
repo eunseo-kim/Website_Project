@@ -29,6 +29,12 @@
         }
 
         function check_input() {
+          if (!document.member_form.id.value) {
+          alert("아이디를 입력하세요!");    
+          document.member_form.id.focus();
+          return;
+          }
+          
           if (!document.member_form.pass.value) {
             alert("비밀번호를 입력하세요!");
             document.member_form.pass.focus();
@@ -100,10 +106,12 @@
         <div id="join_box">
           <!-- member_insert.php 연결 -->
           <form name="member_form" method="post" action="./php/member_insert.php">
-              <div class="form id row1">아이디</div>
-              <div class="form id insert_id">
-                <input type="text" name="id" />
-                <button class="check_id" onclick="check_id()">중 복 확 인</button>
+              <div class="form id">
+                <div class="form row1">아이디</div>
+                <div class="form insert_id">
+                  <input type="text" name="id" />
+                  <button class="check_id" onclick="check_id()">중 복 확 인</button>
+                </div>
               </div>
               <!-- <div class="col3">
                 <a href="#"><img src="./img/check_id.gif" onclick="check_id()" /></a>
