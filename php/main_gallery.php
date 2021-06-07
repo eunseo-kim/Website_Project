@@ -3,6 +3,7 @@
 	    <h3>
         🏆️Trend
 		  </h3>
+          <div class="selectBtn"><a href="main_screen_by_date.php">최신글</a></div>
 	    <ul id="board_list">
 				<li>
           <!-- 각각의 게시물 카드 -->
@@ -13,7 +14,7 @@
                         $page = 1;
 
                     $con = mysqli_connect("localhost", "root", "s6139350!", "diary");
-                    $sql = "select * from board order by hit desc";
+                    $sql = "select * from board order by hit desc"; // 조회수 많은 순서
                     $result = mysqli_query($con, $sql);
                     $total_record = mysqli_num_rows($result); // 전체 글 수
 
