@@ -3,7 +3,7 @@
 	    <h3>
         🏆️Trend
 		  </h3>
-          <div class="selectBtn"><a href="main_screen_by_date.php">최신글</a></div>
+        <span class="selectBtn"><a href="main_screen_by_date.php">최신글</a></span>
 	    <ul id="board_list">
 				<li>
           <!-- 각각의 게시물 카드 -->

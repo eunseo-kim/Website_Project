@@ -3,7 +3,7 @@
 	    <h3>
         🏆️Trend
 		  </h3>
-        <a href="main_screen.php" class="selectBtn">트렌딩</a>
+        <span  class="selectBtn"><a href="main_screen.php">트렌딩</a></span>
 	    <ul id="board_list">
 				<li>
           <!-- 각각의 게시물 카드 -->
@@ -65,7 +65,7 @@
                             <div class="row2">
                                 <span class="name">글쓴이 · <?=$name?></span>
                                 <!-- hit: 조회수 -->
-                                <span class="hits">작성일 · <?=$regist_day?></span>
+                                <span class="hits"><?=$regist_day?></span>
                             </div>
                             <div class="row3"><?=$content?></div>
                         </div>
