@@ -30,7 +30,7 @@
     <header>
       <?php include "./php/header.php";?>
     </header>
-    <?php include "./php/main_gallery.php";?>
+    <?php include "./php/main_gallery_by_date.php";?>
 
     <?php include "./php/footer.php";?>
   </body>
