@@ -66,7 +66,6 @@
         buyer_tel : '',
         buyer_addr : '',
         buyer_postcode : '',
-        // m_redirect_url : 'https://www.yourdomain.com/payments/complete'
         }, function(rsp) {
         if ( rsp.success ) {
             var msg = '결제가 완료되었습니다.';

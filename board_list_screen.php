@@ -81,20 +81,20 @@
                 $file_type   = $row["file_type"];
                 $file_copied = $row["file_copied"];
                 $content     = $row["content"];
-                //======================================= 이미지 처리
+                //  이미지 처리
                 if ($file_type == "image/jpeg" || $file_type == "image/png") {
                   $image_file_image = "<img src='upload/{$file_copied}' class='image_file'>";
                 }
                 else {
                   $image_file_image = "<img src='img/Daily.jpg' class='image_file'>";
                 }
-                //=======================================
+                
                 ?>
                 <li>
                   <a href="board_view_screen.php?num=<?=$num?>&page=<?=$page?>">
+                    <!-- 전체 게시물 볼때 사진 미리보기 기능 -->
                     <div class="image_file"><?php echo $image_file_image; ?></div>
                     <div class="board_list_block">
-                      <!-- <span class="col1"><?=$number?></span> -->
                       <div class="row1"><?=$subject?></div>
                       <div class="row1_2"><?=$content?></div>
                       <div class="row2">작성자 · <?=$name?></span></div>

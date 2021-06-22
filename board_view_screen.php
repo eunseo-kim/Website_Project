@@ -59,7 +59,7 @@
 	$file_copied  = $row["file_copied"];
 	$hit          = $row["hit"];
     $like         = $row["like"];
-    // 첨부 파일이 이미지인 경우, 미리보기 화면에 해당 이미지를 띄운다
+    // 첨부 파일이 이미지인 경우, 화면에 해당 이미지를 띄운다
     if ($file_type == "image/jpeg" || $file_type == "image/png" || $file_type == "image/jpg" || $file_type == "image/gif") {
         $image_file_image = "<img src='upload/{$file_copied}' class='image_file'>";
         }
@@ -71,13 +71,13 @@
 	    $content = str_replace("\n", "<br>", $content);
 
     // 방문자 조회수 쿠키로 판별 (마지막 접속 이후 24시간이 지나야 조회수 1 증가)
-    $hit_cookie_name = $num."_hit";
-    if(!(isset($_COOKIE[$hit_cookie_name]))) {                      //쿠키가 없으면
+    $hit_cookie_name = $num."_hit"; 
+    if(!(isset($_COOKIE[$hit_cookie_name]))) {                  // 쿠키가 없으면
         $new_hit = $hit + 1;                                    // 조회수 1 증가 
         $sql = "update board set hit=$new_hit where num=$num";  
         mysqli_query($con, $sql);
       } 
-    setcookie("$hit_cookie_name", true, time() + (60*60*24));       // 매번 클릭 때마다 쿠키 시간 다시 초기화
+    setcookie("$hit_cookie_name", true, time() + (60*60*24));   // 매번 클릭 때마다 쿠키 시간 다시 초기화
 
 
     mysqli_query($con, $sql);
